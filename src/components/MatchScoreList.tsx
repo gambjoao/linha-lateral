@@ -13,16 +13,18 @@ type MatchScoreListProps = {
 
 export function MatchScoreList({ matches }: MatchScoreListProps) {
   return (
-    <div className="flex gap-12">
-      {matches.map((match, index) => (
-        <MatchScore
-          key={index}
-          homeTeam={match.homeTeam}
-          awayTeam={match.awayTeam}
-          homeScore={match.homeScore}
-          awayScore={match.awayScore}
-        />
-      ))}
+    <div className="overflow-x-auto no-scrollbar">
+      <div className="flex gap-12 flex-nowrap">
+        {matches.map((match, index) => (
+          <MatchScore
+            key={index}
+            homeTeam={match.homeTeam}
+            awayTeam={match.awayTeam}
+            homeScore={match.homeScore}
+            awayScore={match.awayScore}
+          />
+        ))}
+      </div>
     </div>
   );
 }

@@ -29,6 +29,9 @@ export default function Home() {
     { homeTeam: "CPI", homeScore: 0, awayScore: 1, awayTeam: "STC" },
     { homeTeam: "BEN", homeScore: 3, awayScore: 1, awayTeam: "SPO" },
     { homeTeam: "POR", homeScore: 1, awayScore: 0, awayTeam: "GUI" },
+    { homeTeam: "BEN", homeScore: 3, awayScore: 1, awayTeam: "SPO" },
+    { homeTeam: "POR", homeScore: 1, awayScore: 0, awayTeam: "GUI" },
+    { homeTeam: "BRA", homeScore: 0, awayScore: 0, awayTeam: "RAV" },
   ];
 
   return (
