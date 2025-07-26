@@ -5,9 +5,10 @@ import matter from 'gray-matter';
 export type PostMeta = {
   slug: string;
   title: string;
-  date: string;
+  date: string; 
   author: string;
   imageUrl: string;
+  tags: string[];
 };
 
 export type Post = PostMeta & { content: string };

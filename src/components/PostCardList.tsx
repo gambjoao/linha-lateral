@@ -2,13 +2,8 @@
 
 import { useState } from 'react';
 import PostCard from './PostCard';
+import { Post } from '@/types/post';
 
-interface Post {
-  title: string;
-  date: string;
-  preview: string;
-  slug: string;
-}
 
 interface PostCardListProps {
   posts: Post[];

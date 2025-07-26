@@ -4,12 +4,13 @@ import {MatchScoreList} from "@/components/MatchScoreList";
 import Image from "next/image";
 import { getAllPosts } from '@/lib/posts';
 import BottomSection from "@/components/bottom_section";
+import { Post } from '@/types/post';
 
 
 
 export default function Home() {
 
-    const posts = getAllPosts().map((post) => ({
+    const posts: Post[] = getAllPosts().map((post) => ({
       title: post.title,
       date: post.date,
       author: post.author,
@@ -17,6 +18,7 @@ export default function Home() {
       preview: post.content,
       content: post.content,
       slug: post.slug,
+      tags: post.tags,
     }));
 
     const lastMatches = [

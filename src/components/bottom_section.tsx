@@ -3,18 +3,8 @@
 import { useState } from "react";
 import PostCardList from "@/components/PostCardList";
 import PostView from "@/components/PostView";
+import { Post } from '@/types/post';
 
-interface Post {
-  title: string;
-  date: string;
-  author: string;
-  text: string;
-  preview: string;
-  imageUrl: string;
-  tags: string[];
-  slug: string;
-  content: string;
-}
 
 interface BottomSectionProps {
   posts: Post[];
@@ -51,7 +41,7 @@ export default function BottomSection({ posts }: BottomSectionProps) {
           date={selectedPost.date}
           author={selectedPost.author}
           imageUrl={selectedPost.imageUrl}
-          text={selectedPost.content}
+          content={selectedPost.content}
           tags={selectedPost.tags}
           onBack={handleBack}
           visible={mobileView === 'post'}

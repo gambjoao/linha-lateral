@@ -8,7 +8,7 @@ interface PostViewProps {
   date: string;
   author: string;
   imageUrl: string;
-  text: string;
+  content: string;
   tags?: string[];
   onBack?: () => void;
   visible?: boolean;
@@ -19,7 +19,7 @@ export default function PostView({
   date,
   author,
   imageUrl,
-  text,
+  content,
   tags = [],
   onBack,
   visible = true,
@@ -73,7 +73,7 @@ export default function PostView({
 
       {/* 📃 Text */}
       <div className="text-base leading-relaxed whitespace-pre-line text-gray-800 mr-18">
-        {text}
+        {content}
       </div>
     </article>
   );
