@@ -29,7 +29,7 @@ export default function MatchScore({
       <div
         className={clsx(
           bubbleBase,
-          isTie ? "bg-black" : homeWins ? "bg-orange-500" : "bg-black"
+          isTie ? "bg-black" : homeWins ? "bg-accent" : "bg-black"
         )}
       >
         {homeScore}
@@ -39,7 +39,7 @@ export default function MatchScore({
       <div
         className={clsx(
           bubbleBase,
-          isTie ? "bg-black" : awayWins ? "bg-orange-500" : "bg-black"
+          isTie ? "bg-black" : awayWins ? "bg-accent" : "bg-black"
         )}
       >
         {awayScore}

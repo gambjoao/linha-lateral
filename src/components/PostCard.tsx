@@ -20,7 +20,7 @@ export default function PostCard({ title, date, preview, selected, onClick }: Po
       className={clsx(
         'relative cursor-pointer border transition-all rounded-md aspect-[2/1] w-full overflow-hidden shadow-sm hover:shadow-md hover:scale-[1.01] focus:outline-none',
         selected
-          ? 'bg-gradient-to-r from-accent to-orange-500 text-white border-2 border-orange-600'
+          ? 'bg-gradient-to-r from-accent to-orange-600 text-white border-2 border-orange-600'
           : 'bg-white text-black border-gray-200 hover:border-gray-400'
       )}
     >

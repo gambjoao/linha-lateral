@@ -42,11 +42,11 @@ export default function Home() {
         {/* 🔝 Header Section */}
           <header className="flex flex-col w-full">
             {/* Top Logo Row */}
-            <div className="flex items-center -mb-4 -mt-16 justify-start px-6 py-4">
+            <div className="flex items-center mb-4 justify-start px-6 py-4">
               <Image
-                src="/linha_lateral.jpg" 
-                alt="Dribles Logo"
-                width={200}
+                src="/linha_lateral.png" 
+                alt="Linha Lateral Logo"
+                width={150}
                 height={200}
               />
             </div>

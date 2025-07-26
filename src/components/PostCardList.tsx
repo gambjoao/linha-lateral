@@ -1,9 +1,8 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import PostCard from './PostCard';
 import { Post } from '@/types/post';
-
 
 interface PostCardListProps {
   posts: Post[];
@@ -13,6 +12,14 @@ interface PostCardListProps {
 
 export default function PostCardList({ posts, onSelect, visible }: PostCardListProps) {
   const [selectedSlug, setSelectedSlug] = useState<string | null>(null);
+
+  // Select the first post on initial mount
+  useEffect(() => {
+    if (posts.length > 0 && selectedSlug === null) {
+      setSelectedSlug(posts[0].slug);
+      onSelect(posts[0]);
+    }
+  }, [posts, selectedSlug, onSelect]);
 
   return (
     <aside
