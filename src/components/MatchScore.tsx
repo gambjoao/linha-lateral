@@ -18,7 +18,7 @@ export default function MatchScore({
   const homeWins = homeScore > awayScore;
   const awayWins = awayScore > homeScore;
 
-  const bubbleBase = "w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold text-white";
+  const bubbleBase = "w-6 h-6 rounded-full flex items-center justify-center text-base font-bold text-white";
 
   return (
     <div className="flex items-center gap-1">

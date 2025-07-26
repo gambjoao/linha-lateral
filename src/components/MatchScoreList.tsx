@@ -13,7 +13,7 @@ type MatchScoreListProps = {
 
 export function MatchScoreList({ matches }: MatchScoreListProps) {
   return (
-    <div className="flex gap-6">
+    <div className="flex gap-12">
       {matches.map((match, index) => (
         <MatchScore
           key={index}

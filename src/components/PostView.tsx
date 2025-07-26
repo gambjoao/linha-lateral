@@ -1,4 +1,5 @@
-// components/PostView.tsx
+'use client';
+
 import React from "react";
 import Image from "next/image";
 
@@ -9,13 +10,40 @@ interface PostViewProps {
   imageUrl: string;
   text: string;
   tags?: string[];
+  onBack?: () => void;
+  visible?: boolean;
 }
 
-export default function PostView({ title, date, author, imageUrl, text, tags = [] }: PostViewProps) {
+export default function PostView({
+  title,
+  date,
+  author,
+  imageUrl,
+  text,
+  tags = [],
+  onBack,
+  visible = true,
+}: PostViewProps) {
   return (
-    <article className="flex flex-col max-w-3xl mx-auto space-y-6">
+    <article
+      className={`
+        flex-1 p-4 overflow-y-auto no-scrollbar
+        ${visible ? 'block' : 'hidden'}
+        w-full md:block
+      `}
+    >
+      {/* Back Button for mobile */}
+      {onBack && (
+        <button
+          onClick={onBack}
+          className="mb-4 text-sm text-blue-600 hover:underline md:hidden"
+        >
+          ← Voltar
+        </button>
+      )}
+
       {/* 🖼 Image */}
-      <div className="w-full h-90 relative rounded-lg overflow-hidden">
+      <div className="w-full h-100 relative rounded-lg overflow-hidden mb-2">
         <Image
           src={imageUrl}
           alt={title}
@@ -26,7 +54,7 @@ export default function PostView({ title, date, author, imageUrl, text, tags = [
       </div>
 
       {/* 🏷 Tags + Date */}
-      <div className="flex flex-wrap items-center justify-between text-sm text-gray-500">
+      <div className="flex flex-wrap items-center justify-between text-sm text-gray-500 mb-6">
         <div className="flex gap-2 flex-wrap">
           {tags.map((tag) => (
             <span
@@ -41,10 +69,10 @@ export default function PostView({ title, date, author, imageUrl, text, tags = [
       </div>
 
       {/* 📝 Title */}
-      <h1 className="text-4xl font-bold">{title}</h1>
+      <h1 className="text-6xl font-bold mb-10">{title}</h1>
 
       {/* 📃 Text */}
-      <div className="text-base leading-relaxed whitespace-pre-line text-gray-800">
+      <div className="text-base leading-relaxed whitespace-pre-line text-gray-800 mr-18">
         {text}
       </div>
     </article>

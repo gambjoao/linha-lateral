@@ -24,25 +24,22 @@ export default function PostCard({ title, date, preview, selected, onClick }: Po
           : 'bg-white text-black border-gray-200 hover:border-gray-400'
       )}
     >
-      <div className="flex flex-col h-full px-[18px] pt-[30px] pb-[16px] justify-between">
+      <div className="flex flex-col h-full px-[18px] pt-[30px] pb-[16px] justify-between flex-1">
         {/* Top Section (Date + Title + Preview) */}
         <div className="flex flex-col">
-          <p className="text-sm font-light">{date}</p>
-          <div className="mt-[8px]">
-            <h2 className="text-2xl font-bold leading-tight mb-2">{title}</h2>
-            <p className="text-xs line-clamp-2">{preview}</p>
+          <p className="text-[clamp(0.65rem,0.8vw,0.75rem)] font-light">{date}</p>
+          <div className="mt-[6px] flex flex-col flex-grow">
+            <h2 className="text-[clamp(1rem,1.6vw,1.3rem)] font-bold leading-tight mb-1">{title}</h2>
+            <p className="text-[clamp(0.65rem,0.9vw,0.8rem)] line-clamp-2 flex-grow">{preview}</p>
           </div>
         </div>
 
         {/* Bottom-right Action Text */}
-        <p
-          className={clsx(
-            'absolute bottom-[12px] right-[18px] text-sm font-semibold italic text-right',
-            selected ? 'text-white' : 'text-accent'
-          )}
-        >
-          Participe na discussão
-        </p>
+        <div className="self-end text-[clamp(0.7rem,0.9vw,0.8rem)] font-semibold italic text-right">
+          <p className={clsx(selected ? 'text-white' : 'text-accent')}>
+            Participe na discussão
+          </p>
+        </div>
       </div>
     </div>
   );

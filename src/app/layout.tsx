@@ -20,8 +20,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Dribles",
-  description: "As últimas noticias de futebol em Portugal",
+  title: "Linha Lateral",
+  description: "Preview Only - As últimas noticias de futebol em Portugal",
+  robots: "noindex, nofollow",
 };
 
 export default function RootLayout({
