@@ -18,7 +18,7 @@ export default function MatchScore({
   const homeWins = homeScore > awayScore;
   const awayWins = awayScore > homeScore;
 
-  const bubbleBase = "w-6 h-6 rounded-full flex items-center justify-center text-base font-bold text-white";
+  const bubbleBase = "w-6 h-6 rounded-full flex items-center justify-center text-base font-bold text-background";
 
   return (
     <div className="flex items-center gap-1">
@@ -29,7 +29,7 @@ export default function MatchScore({
       <div
         className={clsx(
           bubbleBase,
-          isTie ? "--primary-text" : homeWins ? "bg-accent" : "--primary-text"
+          isTie ? "bg-foreground" : homeWins ? "bg-accent" : "bg-foreground"
         )}
       >
         {homeScore}
@@ -39,7 +39,7 @@ export default function MatchScore({
       <div
         className={clsx(
           bubbleBase,
-          isTie ? "--primary-text" : awayWins ? "bg-accent" : "--primary-text"
+          isTie ? "bg-foreground" : awayWins ? "bg-accent" : "bg-foreground"
         )}
       >
         {awayScore}
