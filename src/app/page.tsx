@@ -1,7 +1,6 @@
 // pages/index.tsx
 import Head from "next/head";
 import {MatchScoreList} from "@/components/MatchScoreList";
-import Image from "next/image";
 import { getAllPosts } from '@/lib/posts';
 import BottomSection from "@/components/bottom_section";
 import { Post } from '@/types/post';
