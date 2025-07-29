@@ -23,13 +23,13 @@ export default function MatchScore({
   return (
     <div className="flex items-center gap-1">
       {/* Home team */}
-      <span className="font-semibold text-sm text-black">{homeTeam}</span>
+      <span className="font-semibold text-sm">{homeTeam}</span>
 
       {/* Home score bubble */}
       <div
         className={clsx(
           bubbleBase,
-          isTie ? "bg-black" : homeWins ? "bg-accent" : "bg-black"
+          isTie ? "--primary-text" : homeWins ? "bg-accent" : "--primary-text"
         )}
       >
         {homeScore}
@@ -39,14 +39,14 @@ export default function MatchScore({
       <div
         className={clsx(
           bubbleBase,
-          isTie ? "bg-black" : awayWins ? "bg-accent" : "bg-black"
+          isTie ? "--primary-text" : awayWins ? "bg-accent" : "--primary-text"
         )}
       >
         {awayScore}
       </div>
 
       {/* Away team */}
-      <span className="font-semibold text-sm text-black">{awayTeam}</span>
+      <span className="font-semibold text-sm">{awayTeam}</span>
     </div>
   );
 }
