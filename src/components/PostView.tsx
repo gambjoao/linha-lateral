@@ -36,14 +36,14 @@ export default function PostView({
       {onBack && (
         <button
           onClick={onBack}
-          className="mb-4 text-sm text-primary-text hover:underline md:hidden"
+          className="mb-4 text-sm font-bold text-primary-text hover:underline md:hidden"
         >
           ← Voltar
         </button>
       )}
 
       {/* 🖼 Image */}
-      <div className="w-full h-100 relative rounded-lg overflow-hidden mb-2">
+      <div className="w-full h-48 md:h-100 relative rounded-lg overflow-hidden mb-2">
         <Image
           src={imageUrl}
           alt={title}
@@ -69,10 +69,10 @@ export default function PostView({
       </div>
 
       {/* 📝 Title */}
-      <h1 className="text-6xl font-bold mb-10">{title}</h1>
+      <h1 className="text-5xl md:text-6xl  font-bold mb-10">{title}</h1>
 
       {/* 📃 Text */}
-      <div className="text-base text-justify leading-relaxed whitespace-pre-line mr-18">
+      <div className="text-base text-justify leading-relaxed whitespace-pre-line md:mr-18">
         {content}
       </div>
     </article>
