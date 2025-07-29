@@ -33,7 +33,7 @@ export default function BottomSection({ posts }: BottomSectionProps) {
   };
 
   useEffect(() => {
-    const onPopState = (event: PopStateEvent) => {
+    const onPopState = () => {
       // On browser back, return to list view
       setMobileView('list');
     };
