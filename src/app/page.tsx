@@ -5,6 +5,7 @@ import Image from "next/image";
 import { getAllPosts } from '@/lib/posts';
 import BottomSection from "@/components/bottom_section";
 import { Post } from '@/types/post';
+import MainLogo from "@/components/MainLogo";
 
 
 
@@ -45,15 +46,7 @@ export default function Home() {
         {/* 🔝 Header Section */}
           <header className="flex flex-col w-full">
             {/* Top Logo Row */}
-            <div className="flex items-center mb-4 justify-start px-6 py-4">
-              <Image
-                src="/linha_lateral.png" 
-                alt="Linha Lateral Logo"
-                width={150}
-                height={200}
-              />
-            </div>
-            {/* Match Scores + Club Icons Row */}
+            <MainLogo />            {/* Match Scores + Club Icons Row */}
             <div className="flex w-full px-6 pb-4">
               {/* 🟧 Left: Match Scores */}
               <div className="w-1/1 mb-4 flex items-center">

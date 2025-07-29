@@ -36,7 +36,7 @@ export default function PostView({
       {onBack && (
         <button
           onClick={onBack}
-          className="mb-4 text-sm text-blue-600 hover:underline md:hidden"
+          className="mb-4 text-sm text-primary-text hover:underline md:hidden"
         >
           ← Voltar
         </button>
