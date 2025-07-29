@@ -72,7 +72,7 @@ export default function PostView({
       <h1 className="text-6xl font-bold mb-10">{title}</h1>
 
       {/* 📃 Text */}
-      <div className="text-base leading-relaxed whitespace-pre-line mr-18">
+      <div className="text-base text-justify leading-relaxed whitespace-pre-line mr-18">
         {content}
       </div>
     </article>

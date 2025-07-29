@@ -46,7 +46,8 @@ export default function Home() {
         {/* 🔝 Header Section */}
           <header className="flex flex-col w-full">
             {/* Top Logo Row */}
-            <MainLogo />            {/* Match Scores + Club Icons Row */}
+            <MainLogo />
+            {/* Match Scores + Club Icons Row */}
             <div className="flex w-full px-6 pb-4">
               {/* 🟧 Left: Match Scores */}
               <div className="w-1/1 mb-4 flex items-center">
