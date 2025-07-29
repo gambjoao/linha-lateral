@@ -12,6 +12,9 @@ export const metadata = {
   title: "Linha Lateral",
   description: "Preview Only - As últimas noticias de futebol em Portugal",
   robots: "noindex, nofollow",
+  icons: {
+    icon: "/linha_lateral.png",
+  },
 };
 
 export default function RootLayout({

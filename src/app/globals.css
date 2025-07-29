@@ -3,22 +3,24 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --accent: #FF7700;
-  --font-sans: var(--font-inter); /* 👈 Set Inter as default sans */
-}
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-accent: var(--accent);
+  --primary-text: #171717;
+  --secondary-text: #303030;
+
+  --accent: #FF7700;
   --font-sans: var(--font-inter);
   --font-mono: var(--font-inter-mono);
 }
+
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+
+    --primary-text: #ededed;
+    --secondary-text: #aaaaaa;
+    --accent: #FF7700;
   }
 }
 
@@ -35,5 +37,17 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans); /* 👈 Uses Inter by default */
+  font-family: var(--font-sans);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+
+  --color-primary-text: var(--primary-text);
+  --color-secondary-text: var(--secondary-text);
+
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-inter-mono);
 }
