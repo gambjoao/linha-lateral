@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import PostCard from './PostCard';
 import { Post } from '@/types/post';
+import { useIsMobile } from '@/hooks/UseIsMobile';
 
 interface PostCardListProps {
   posts: Post[];
@@ -12,14 +13,15 @@ interface PostCardListProps {
 
 export default function PostCardList({ posts, onSelect, visible }: PostCardListProps) {
   const [selectedSlug, setSelectedSlug] = useState<string | null>(null);
+  const isMobile = useIsMobile(); // Default breakpoint = 768
 
   // Select the first post on initial mount
   useEffect(() => {
-    if (posts.length > 0 && selectedSlug === null) {
+    if (!isMobile && posts.length > 0 && selectedSlug === null) {
       setSelectedSlug(posts[0].slug);
       onSelect(posts[0]);
     }
-  }, [posts, selectedSlug, onSelect]);
+  }, [isMobile, posts, selectedSlug, onSelect]);
 
   return (
     <aside
