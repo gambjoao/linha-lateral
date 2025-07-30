@@ -18,7 +18,6 @@ export default function PostCardList({ posts, onSelect, visible }: PostCardListP
   // Select the first post on initial mount
   useEffect(() => {
     if (!isMobile && posts.length > 0 && selectedSlug === null) {
-      console.log("This is a big screen, selecting first post");
       setSelectedSlug(posts[0].slug);
       onSelect(posts[0]);
     }

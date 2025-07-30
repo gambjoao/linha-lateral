@@ -24,23 +24,31 @@ export default function PostCard({ title, date, preview, selected, onClick }: Po
           : 'bg-white text-black border-gray-200 hover:border-gray-400'
       )}
     >
-      <div className="flex flex-col h-full px-[18px] pt-[30px] pb-[16px] justify-between flex-1">
-        {/* Top Section (Date + Title + Preview) */}
-        <div className="flex flex-col">
-          <p className="text-[clamp(0.65rem,0.8vw,0.75rem)] font-light">{date}</p>
-          <div className="mt-[6px] flex flex-col flex-grow">
-            <h2 className="text-[clamp(1rem,1.6vw,1.3rem)] font-bold leading-tight mb-1">{title}</h2>
-            <p className="text-[clamp(0.65rem,0.9vw,0.8rem)] line-clamp-2 flex-grow">{preview}</p>
-          </div>
+      <div className="flex flex-col h-full px-[18px] md:px-3 lg:px-[clamp(8px,1.2vw,18px)] pt-[30px] md:pt-4 lg:pt-[clamp(16px,2vw,30px)] pb-[16px] md:pb-3 lg:pb-[clamp(10px,1vw,16px)] justify-between flex-1">
+
+        {/* Date stays at the top */}
+        <p className="text-[clamp(0.65rem,0.8vw,0.75rem)] md:text-xs lg:text-[clamp(0.6rem,0.7vw,0.75rem)] font-light">
+          {date}
+        </p>
+
+        {/* Centered block with title + preview */}
+        <div className="flex flex-col justify-center items-start flex-1">
+          <h2 className="text-[clamp(1rem,1.6vw,1.3rem)] md:text-base md:line-clamp-2 lg:text-[clamp(0.9rem,1.3vw,1.3rem)] font-bold leading-tight mb-1">
+            {title}
+          </h2>
+          <p className="text-[clamp(0.65rem,0.9vw,0.8rem)] line-clamp-2 md:text-xs md:hidden lg:text-[clamp(0.6rem,0.8vw,0.8rem)] lg:line-clamp-2">
+            {preview}
+          </p>
         </div>
 
-        {/* Bottom-right Action Text */}
-        <div className="self-end text-[clamp(0.7rem,0.9vw,0.8rem)] font-semibold italic text-right">
+        {/* Call to action pinned to bottom */}
+        <div className="self-end text-[clamp(0.7rem,0.9vw,0.8rem)] md:text-xs lg:text-[clamp(0.65rem,0.8vw,0.8rem)] font-semibold italic text-right">
           <p className={clsx(selected ? 'text-white' : 'text-accent')}>
             Participe na discussão
           </p>
         </div>
       </div>
+
     </div>
   );
 }

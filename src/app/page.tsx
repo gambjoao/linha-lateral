@@ -41,7 +41,7 @@ export default function Home() {
       </Head>
 
       <main className="flex flex-col h-screen ">
-        <div className="flex flex-col flex-1 overflow-hidden w-full px-6 sm:px-10 md:px-20 lg:px-[80px] pt-6 sm:pt-8 md:pt-10 lg:pt-10">
+        <div className="flex flex-col flex-1 overflow-hidden w-full px-6 sm:px-10 md:px-12 lg:px-[80px] pt-6 sm:pt-8 md:pt-10 lg:pt-10">
         {/* 🔝 Header Section */}
           <header className="flex flex-col w-full">
             {/* Top Logo Row */}
