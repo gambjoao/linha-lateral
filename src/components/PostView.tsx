@@ -65,7 +65,7 @@ export default function PostView({
             </span>
           ))}
         </div>
-        <div className="italic">{date} — por {author}</div>
+        <div className="italic">{date}    |    {author}</div>
       </div>
 
       {/* 📝 Title */}
