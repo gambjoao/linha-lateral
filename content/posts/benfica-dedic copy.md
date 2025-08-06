@@ -9,7 +9,7 @@ tags: ["benfica"]
 
 O Benfica venceu esta noite o Nice por 0-2 e deu um passo importante rumo à próxima fase da eliminatória. Foi um jogo animado, sobretudo na primeira parte, onde ambas as equipas mostraram mais argumentos ofensivos do que defensivos.
 
-A equipa encarnada apresentou-se num 4-4-2 com Scheldrup a titular – e que jogo fez o jovem norueguês até ser substituído! Mostrou-se muito mais inspirado e perigoso do que no jogo frente ao Sporting, muito por culpa de um adversário que também ofereceu menos resistência defensiva.
+A equipa encarnada apresentou-se num 4-4-2 com Scheldrup a titular – e que jogo fez o jovem norueguês até ser substituído! O Benfica mostrou-se muito mais inspirado e perigoso do que no jogo frente ao Sporting, muito por culpa de um adversário que também ofereceu menos resistência defensiva.
 
 Apesar da boa entrada, o Benfica também mostrou algumas fragilidades a defender, algo que se foi notando mais com o passar do tempo. Depois do primeiro golo, apontado por Ivanovic aos 63 minutos numa excelente finalização na sua estreia, e da saída de Scheldrup, a equipa perdeu algum ímpeto ofensivo. O Nice, por sua vez, cresceu no jogo e somou algumas jogadas perigosas, ainda que sem grande eficácia na hora de finalizar.
 
@@ -36,5 +36,4 @@ Apesar do resultado e da vantagem confortável, fica a nota de que o Benfica par
 
 Golos:
 Ivanovic (63')
-
 Florentino Luís (87')
