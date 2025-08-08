@@ -19,11 +19,11 @@ export default function Home() {
       content: post.content,
       slug: post.slug,
       tags: post.tags,
-    }));
+    })).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()); ;
 
     const lastMatches = [
-    { homeTeam: "NIC", homeScore: 0, awayScore: 2, awayTeam: "BEN" },
-    { homeTeam: "CPI", homeScore: 0, awayScore: 2, awayTeam: "SPO" }
+    { homeTeam: "CPI", homeScore: 0, awayScore: 2, awayTeam: "SPO" },
+    { homeTeam: "NIC", homeScore: 0, awayScore: 2, awayTeam: "BEN" },  
   ];
 
   return (
