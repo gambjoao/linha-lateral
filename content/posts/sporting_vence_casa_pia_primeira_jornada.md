@@ -3,7 +3,7 @@ title: "Leões Mandam no primeiro jogo: Sporting Controla e Vence sem espinhas o
 date: "08/08/2025"
 author: "Image credit: ©Sporting CP, sporting.pt"
 text: "Leões Mandam no primeiro jogo: Sporting Controla e Vence sem espinhas o Casa Pia"
-imageUrl: "sporting_vence_casa_pia_primeira_jornada"
+imageUrl: "sporting_vence_casa_pia_primeira_jornada.jpg"
 tags: ["sporting"]
 ---
 
