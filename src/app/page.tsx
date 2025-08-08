@@ -23,6 +23,7 @@ export default function Home() {
 
     const lastMatches = [
     { homeTeam: "NIC", homeScore: 0, awayScore: 2, awayTeam: "BEN" },
+    { homeTeam: "CPI", homeScore: 0, awayScore: 2, awayTeam: "SPO" }
   ];
 
   return (
