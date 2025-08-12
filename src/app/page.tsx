@@ -22,6 +22,7 @@ export default function Home() {
     })).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()); ;
 
     const lastMatches = [
+    { homeTeam: "POR", homeScore: 3, awayScore: 0, awayTeam: "GUI" },
     { homeTeam: "CPI", homeScore: 0, awayScore: 2, awayTeam: "SPO" },
     { homeTeam: "NIC", homeScore: 0, awayScore: 2, awayTeam: "BEN" },  
   ];

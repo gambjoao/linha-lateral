@@ -1,0 +1,27 @@
+[33m7f1c378[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m HEAD@{0}: reset: moving to 7f1c378
+[33m129ea23[m[33m ([m[1;31morigin/master[m[33m)[m HEAD@{1}: commit: fixed post ordering issues
+[33ma0eb802[m HEAD@{2}: commit: minor post fixes 08082025-2
+[33m4ba7ab9[m HEAD@{3}: commit: minor post fixes 08082025
+[33m55069f3[m HEAD@{4}: commit: casa pia 0 sporting 2
+[33m2de6783[m HEAD@{5}: commit: Fixed minor errors
+[33mc84d18c[m HEAD@{6}: commit: Added first real post
+[33m7d1bbbe[m HEAD@{7}: commit: changed mobile layouts
+[33md3d811f[m HEAD@{8}: commit: Now i really fixed it - the auto selection in mobile i mean
+[33m505021c[m HEAD@{9}: commit: Fixed auto selection for mobile - i hope
+[33m0504c3a[m HEAD@{10}: commit: Removed unused parameter
+[33m135d6d9[m HEAD@{11}: commit: Added back control for mobile
+[33m780f2fe[m HEAD@{12}: commit: Corrected mobile post view layout
+[33m33150c1[m HEAD@{13}: commit: Fixed image being called but never used
+[33m2e7249d[m HEAD@{14}: commit: Justified post text and minor visual changes
+[33m06b1b6c[m HEAD@{15}: commit: Added favicon
+[33m60447e7[m HEAD@{16}: commit: Applied dynamic color logo
+[33m5110123[m HEAD@{17}: commit: Applied new fixes to match colors
+[33m0f2e471[m HEAD@{18}: commit: Refactored match results to obey theme
+[33ma1eaf47[m HEAD@{19}: commit: Refactored Post View colors to hear themes
+[33mcc0c24b[m HEAD@{20}: commit: Added side scroll for match results
+[33m94929df[m HEAD@{21}: commit: Minor Visual Changes
+[33m370c306[m HEAD@{22}: commit: Fixed duplicated types of Posts
+[33m282ff62[m HEAD@{23}: commit: Removed unused fonts and metadata import on layout.tsx
+[33mb1429bd[m HEAD@{24}: commit: Prepare for first deploy of Linha Lateral preview
+[33mf08b085[m HEAD@{25}: commit: Built the App onto version proto Beta version i.e. site is mostly functional
+[33m7f1c378[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m HEAD@{26}: commit (initial): Initial commit from Create Next App
