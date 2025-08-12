@@ -8,7 +8,7 @@ tags: ["benfica"]
 ---
 
 O Benfica vinha com uma vantagem confortável e voltou a demonstrar superioridade frente ao Nice ganhando por 2-0 (4-0 no agregado).
-O Benfica vinha em vantagem na eliminatória e procurava gerir o ritmo perante um Nice pressionado para marcar cedo. A equipa francesa assumiu as despesas iniciais, mas o Benfica manteve-se compacto e explorou as transições. Schelderup voltou a mostrar que oferece uma profundidade que mais nenhum jogador do plantel consegue replicar.
+O Benfica procurava gerir o ritmo perante um Nice pressionado para marcar cedo. A equipa francesa assumiu as despesas iniciais, mas o Benfica manteve-se compacto e explorou as transições. Schelderup voltou a mostrar que oferece uma profundidade que mais nenhum jogador do plantel consegue replicar.
 
 O Nice entrou muito agressivo, fruto da desvantagem na eliminatória. O Benfica tentou — e até certo ponto conseguiu — pôr algum gelo no jogo. Muito importante a atuação de António Silva nesta fase inicial.
 O primeiro golo surgiu quando Schelderup se desmarcou em profundidade, recebeu a bola com classe e assistiu Aursnes, que finalizou com técnica. Pouco depois, os papéis inverteram-se: Aursnes serviu Schelderup para o 2-0.
